@@ -14,8 +14,6 @@ const bucket = "todos"
 func main() {
 	fmt.Println("main start...")
 
-	// ids := []string{"1", "2", "3", "4", "5"}
-
 	db, err := bolt.Open(dbFile, 0600, nil)
 	if err != nil {
 		log.Fatal(err)
